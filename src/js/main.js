@@ -28,7 +28,6 @@ class Curtain {
     });
 
     if (this.isFirst) {
-      this.curtain.css('left', '0px');
       this.isFirst = false;
       initialPos.x = 0;
       hidden.start();
