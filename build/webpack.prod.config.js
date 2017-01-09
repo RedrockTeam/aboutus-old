@@ -15,16 +15,16 @@ const devConfig = {
   module: {
     loaders: [{
       test: /\.(png|jpg|eot|svg|ttf|woff)$/,
-      loader: 'url?limit=8192&name=img/[name].[ext]',
+      loader: 'url?limit=8192&name=[name].[ext]',
     }, {
       test: /\.mp4$/,
       loader: 'url?limit=10000&mimetype=video/mp4&name=[name].[ext]',
     }, {
       test: /\.s(a|c)ss$/,
-      loader: ExtractTextPlugin.extract('style', 'css!autoprefixer!sass'),
+      loader: ExtractTextPlugin.extract('style', 'css!autoprefixer!sass', { publicPath: '../' }),
     }, {
       test: /\.css$/,
-      loader: ExtractTextPlugin.extract('style', 'css!autoprefixer'),
+      loader: ExtractTextPlugin.extract('style', 'css!autoprefixer', { publicPath: '../' }),
     }, {
       test: /\.jsx?$/,
       exclude: /node_modules/,
