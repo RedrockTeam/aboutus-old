@@ -164,6 +164,16 @@ body {
       background-color: darken(#49494C, 10)
     }
   }
+  .wechat {
+    @media screen and (max-height: 600px) {
+      display: none;
+    }
+  }
+  .weibo {
+    @media screen and (max-height: 700px) {
+      display: none;
+    }
+  }
 }
 
 #curtain {
@@ -300,7 +310,7 @@ body {
 .p2 {
   .slick-dots {
     position: absolute;
-    top: -4px;
+    top: 30px;
     right: 0;
     left: 0;
     margin: auto;
@@ -309,6 +319,12 @@ body {
     list-style: none;
     font-weight: 200;
     border-bottom: 1px solid $shadow;
+    @media screen and (max-height: 650px) {
+      top: 60px;
+    }
+    @media screen and (min-height: 900px) {
+      top: 0px;
+    }
     :nth-child(1) {
       &:after {
         content: "站长团";
@@ -329,7 +345,7 @@ body {
     }
     :nth-child(4) {
       &:after {
-        content: "WEB前端";
+        content: "WEB研发";
         left: -15px;
       }
     }
