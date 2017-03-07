@@ -222,33 +222,42 @@ body {
     }
   }
 }
-.down,
-.up {
+.semicircle {
   position: absolute;
+  overflow: hidden;
   margin: auto;
   right: 0;
   left: 0;
   width: 90px;
-  height: 90px;
-  font-size: 26px;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 90px;
-  background-color: $red;
-  cursor: pointer;
+  height: 45px;
+  a {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    font-size: 26px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 90px;
+    background-color: $red;
+    cursor: pointer;
+  }
 }
 .down {
-  bottom: -45px;
+  bottom: 0px;
   line-height: 45px;
-  &:hover {
+  a:hover {
     animation: down 1s ease-in-out infinite;
   }
 }
 .up {
-  top: -45px;
+  top: 0px;
   line-height: 120px;
-  &:hover {
+  a {
+    position: absolute;
+    top: -45px;
+  }
+  a:hover {
     animation: up 1s ease-in-out infinite;
   }
 }
