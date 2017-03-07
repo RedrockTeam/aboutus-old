@@ -137,6 +137,7 @@ function qrcode() {
 $(document).ready(() => {
   $(window).on('resize', () => {
     $.fn.fullpage.reBuild();
+    curtain.play();
   });
   handleSlick();
   $('#homepage').fullpage({
