@@ -1,5 +1,5 @@
 import 'normalize.css';
-import 'fullpage.js/jquery.fullPage.scss';
+import '../node_modules/fullpage.js/dist/jquery.fullpage.css';
 import 'slick-carousel/slick/slick.css';
 import './css/index.scss';
 import './js/main';

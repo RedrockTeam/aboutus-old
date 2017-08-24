@@ -24,10 +24,10 @@ const devConfig = {
       loader: 'url?mimetype=video/mp4&name=[name].[ext]',
     }, {
       test: /\.s(a|c)ss$/,
-      loader: 'style!css?sourceMap!autoprefixer!sass',
+      loader: 'style!css?sourceMap!postcss!sass',
     }, {
       test: /\.css$/,
-      loader: 'style!css?sourceMap!autoprefixer',
+      loader: 'style!css?sourceMap!postcss',
     }, {
       test: /\.jsx?$/,
       exclude: /node_modules/,

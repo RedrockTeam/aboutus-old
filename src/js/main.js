@@ -1,6 +1,6 @@
 import $ from 'jquery';
-import 'fullpage.js/jquery.fullPage.js';
-import TWEEN from 'tween.js';
+import 'fullpage.js';
+import TWEEN from '@tweenjs/tween.js';
 import 'slick-carousel';
 
 // 幕布效果
@@ -72,6 +72,7 @@ function handleSlick() {
     speed: 1000,
     autoplay: true,
     autoplaySpeed: 6000,
+    focusOnSelect: true
   });
 
   $('.graduate').slick({
