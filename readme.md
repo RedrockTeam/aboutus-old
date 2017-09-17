@@ -1,3 +1,6 @@
 ## 2016 about us - Redrock
 
-> cp aboutus_bak/dist/* .
+> 两个分支
+> master PC端
+> mobile 移动端
+
