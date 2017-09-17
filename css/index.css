@@ -1,0 +1,398 @@
+@charset "UTF-8";
+/*
+* @Author: Excelsior
+* @Date:   2017-04-23 16:30:38
+* @Last Modified by:   Excelsior
+* @Last Modified time: 2017-04-25 21:26:17
+*/
+@font-face {
+  font-family: "iconfont";
+  src: url("../font/iconfont.woff?t=1493006517547") format("woff"), url("../font/iconfont.ttf?t=1493006517547") format("truetype"); }
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-fenlei:before {
+  content: "\e63f"; }
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif !important; }
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%; }
+
+a {
+  text-decoration: none; }
+  a:active {
+    text-decoration: none; }
+
+.menu {
+  text-align: center;
+  padding: 0.6rem 0;
+  background-color: #3d3e40; }
+
+.menu .logo {
+  width: 2.08rem;
+  height: 2.08rem; }
+
+.menu ul {
+  margin-top: 1.06667rem; }
+
+.menu ul li {
+  margin: 0.26667rem 0;
+  padding: 0.26667rem 0; }
+  .menu ul li a {
+    color: #999999;
+    width: 1.65333rem;
+    padding: 0.26667rem 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #646566; }
+    [data-dpr="2"] .menu ul li a {
+      font-size: 28px; }
+    [data-dpr="3"] .menu ul li a {
+      font-size: 42px; }
+    [data-dpr="2"] .menu ul li a {
+      letter-spacing: 2px; }
+    [data-dpr="3"] .menu ul li a {
+      letter-spacing: 3px; }
+  .menu ul li:last-child a {
+    border: 0; }
+
+.panel {
+  text-align: center;
+  min-height: 100%;
+  background-color: #fff; }
+
+.menu-toggle {
+  z-index: 3;
+  position: fixed;
+  top: 0.34667rem;
+  right: 0.26667rem;
+  font-size: 30px; }
+  [data-dpr="2"] .menu-toggle {
+    font-size: 60px; }
+  [data-dpr="3"] .menu-toggle {
+    font-size: 90px; }
+
+.swiper-container {
+  height: 100%; }
+
+.content-wrapper {
+  padding: 0.26667rem;
+  padding-top: 0.32rem; }
+
+.page-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.13333rem; }
+  .page-title .color-lump {
+    float: left;
+    width: 0.64rem;
+    height: 0.32rem;
+    background-color: #EC3838; }
+  .page-title .title-text {
+    font-size: 17px;
+    position: relative;
+    left: 0.26667rem;
+    color: #EC3838;
+    font-weight: lighter; }
+    [data-dpr="2"] .page-title .title-text {
+      font-size: 34px; }
+    [data-dpr="3"] .page-title .title-text {
+      font-size: 51px; }
+
+/* 首页 */
+#index-page .banner {
+  width: 100%;
+  height: 6.37333rem;
+  background-size: cover;
+  background-image: url(../images/index-banner.png); }
+#index-page .content {
+  color: #666666;
+  text-align: left;
+  font-weight: lighter;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 2px; }
+  [data-dpr="2"] #index-page .content {
+    font-size: 30px; }
+  [data-dpr="3"] #index-page .content {
+    font-size: 45px; }
+  [data-dpr="2"] #index-page .content {
+    line-height: 44px; }
+  [data-dpr="3"] #index-page .content {
+    line-height: 66px; }
+  [data-dpr="2"] #index-page .content {
+    letter-spacing: 4px; }
+  [data-dpr="3"] #index-page .content {
+    letter-spacing: 6px; }
+
+/* 站长团 */
+#manager-team .content {
+  margin-top: 0.4rem; }
+  #manager-team .content .item {
+    display: flex;
+    align-items: center;
+    padding: 0.26667rem 0; }
+    #manager-team .content .item .avatar {
+      border-radius: 50%;
+      width: 2.4rem;
+      height: 2.4rem; }
+    #manager-team .content .item .intro {
+      text-align: left;
+      margin-left: 0.53333rem; }
+      #manager-team .content .item .intro .job {
+        color: #333;
+        font-size: 16px; }
+        [data-dpr="2"] #manager-team .content .item .intro .job {
+          font-size: 32px; }
+        [data-dpr="3"] #manager-team .content .item .intro .job {
+          font-size: 48px; }
+      #manager-team .content .item .intro .name {
+        color: #666;
+        margin-left: 0.26667rem;
+        font-size: 16px; }
+        [data-dpr="2"] #manager-team .content .item .intro .name {
+          font-size: 32px; }
+        [data-dpr="3"] #manager-team .content .item .intro .name {
+          font-size: 48px; }
+      #manager-team .content .item .intro .extra-intro {
+        color: #919191;
+        text-align: left;
+        margin-top: 0.18667rem;
+        font-size: 13px; }
+        [data-dpr="2"] #manager-team .content .item .intro .extra-intro {
+          font-size: 26px; }
+        [data-dpr="3"] #manager-team .content .item .intro .extra-intro {
+          font-size: 39px; }
+
+/* 部门介绍 */
+#department-intro {
+  background-color: #f2f2f2; }
+  #department-intro .page-title {
+    margin-bottom: 0.53333rem; }
+  #department-intro .plan {
+    background-image: url(../images/plan-dep.png); }
+  #department-intro .web {
+    background-image: url(../images/web-dep.png); }
+  #department-intro .design {
+    background-image: url(../images/design-dep.png); }
+  #department-intro .mobile {
+    background-image: url(../images/mobile-dep.png); }
+  #department-intro .safe {
+    background-image: url(../images/safe-dep.png); }
+  #department-intro .department {
+    background-color: #fff; }
+    #department-intro .department .dep-bg {
+      height: 6.98667rem;
+      background-size: cover; }
+    #department-intro .department .dep-intro {
+      text-align: left;
+      padding: 0.22667rem; }
+      #department-intro .department .dep-intro .name {
+        color: #ec3838;
+        font-size: 14px;
+        font-weight: 400;
+        margin-right: 0.21333rem; }
+        [data-dpr="2"] #department-intro .department .dep-intro .name {
+          font-size: 28px; }
+        [data-dpr="3"] #department-intro .department .dep-intro .name {
+          font-size: 42px; }
+      #department-intro .department .dep-intro p {
+        color: #919191;
+        margin-top: 0.22667rem;
+        text-indent: 0.66667rem;
+        font-size: 13px;
+        line-height: 24px; }
+        [data-dpr="2"] #department-intro .department .dep-intro p {
+          font-size: 26px; }
+        [data-dpr="3"] #department-intro .department .dep-intro p {
+          font-size: 39px; }
+        [data-dpr="2"] #department-intro .department .dep-intro p {
+          line-height: 48px; }
+        [data-dpr="3"] #department-intro .department .dep-intro p {
+          line-height: 72px; }
+
+/* 作品展示 */
+#production-show {
+  background-color: #f2f2f2; }
+  #production-show .page-title {
+    margin-bottom: 0.53333rem; }
+  #production-show .swiper-slide {
+    width: 72%;
+    margin: 0 -2%;
+    transform: scale(0.75);
+    background-color: #fff; }
+  #production-show .jsns {
+    background-image: url(../images/jsns.png); }
+  #production-show .zscy {
+    background-image: url(../images/zscy.png); }
+  #production-show .shihuo {
+    background-image: url(../images/shihuo.png); }
+  #production-show .btdown {
+    background-image: url(../images/btdown.png); }
+  #production-show .cyxbs {
+    background-image: url(../images/cyxbs.png); }
+  #production-show .wzdq {
+    background-image: url(../images/wzdq.png); }
+  #production-show .production {
+    padding-bottom: 0.53333rem; }
+    #production-show .production .production-img {
+      background-size: cover;
+      height: 6.98667rem; }
+    #production-show .production .website {
+      text-align: left;
+      padding: 0.22667rem;
+      padding-top: 0.26667rem; }
+      #production-show .production .website .name {
+        color: #333;
+        font-size: 16px;
+        margin-right: 0.21333rem; }
+        [data-dpr="2"] #production-show .production .website .name {
+          font-size: 32px; }
+        [data-dpr="3"] #production-show .production .website .name {
+          font-size: 48px; }
+      #production-show .production .website .title {
+        color: #666;
+        font-size: 13px; }
+        [data-dpr="2"] #production-show .production .website .title {
+          font-size: 26px; }
+        [data-dpr="3"] #production-show .production .website .title {
+          font-size: 39px; }
+      #production-show .production .website .intro {
+        color: #919191;
+        margin-top: 0.22667rem;
+        font-size: 12px;
+        line-height: 22px; }
+        [data-dpr="2"] #production-show .production .website .intro {
+          font-size: 24px; }
+        [data-dpr="3"] #production-show .production .website .intro {
+          font-size: 36px; }
+        [data-dpr="2"] #production-show .production .website .intro {
+          line-height: 44px; }
+        [data-dpr="3"] #production-show .production .website .intro {
+          line-height: 66px; }
+
+/* 成员现状 */
+#member-status .swiper-pagination {
+  position: initial;
+  margin-top: 0.46667rem; }
+#member-status .swiper-pagination-bullet-active {
+  background-color: #ff001c; }
+#member-status .swiper-pagination-bullet {
+  width: 0.26667rem;
+  height: 0.26667rem; }
+#member-status .swiper-slide section {
+  margin-top: 0.33333rem; }
+#member-status .swiper-slide header {
+  display: flex;
+  align-items: center; }
+  #member-status .swiper-slide header .color-lump {
+    float: left;
+    width: 0.18667rem;
+    height: 0.18667rem;
+    background-color: #999; }
+  #member-status .swiper-slide header span {
+    color: #999;
+    font-weight: lighter;
+    font-size: 14px;
+    margin-left: 0.13333rem; }
+    [data-dpr="2"] #member-status .swiper-slide header span {
+      font-size: 28px; }
+    [data-dpr="3"] #member-status .swiper-slide header span {
+      font-size: 42px; }
+#member-status .swiper-slide .member {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.13333rem;
+  margin-left: 0.32rem; }
+  #member-status .swiper-slide .member .name, #member-status .swiper-slide .member .company {
+    color: #333;
+    font-weight: 400;
+    font-size: 14px; }
+    [data-dpr="2"] #member-status .swiper-slide .member .name, [data-dpr="2"] #member-status .swiper-slide .member .company {
+      font-size: 28px; }
+    [data-dpr="3"] #member-status .swiper-slide .member .name, [data-dpr="3"] #member-status .swiper-slide .member .company {
+      font-size: 42px; }
+
+#join-us {
+  background-color: #f2f2f2; }
+  #join-us .content main img {
+    margin-top: 0.26667rem; }
+  #join-us .content main p {
+    color: #464646;
+    text-align: center;
+    margin-top: 0.26667rem;
+    font-size: 20px; }
+    [data-dpr="2"] #join-us .content main p {
+      font-size: 40px; }
+    [data-dpr="3"] #join-us .content main p {
+      font-size: 60px; }
+  #join-us .content main button {
+    width: 4.13333rem;
+    height: 0.98667rem;
+    background-color: #ed4747;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 1.33333rem; }
+    #join-us .content main button a {
+      color: #fff;
+      font-weight: 300;
+      font-size: 14px;
+      letter-spacing: 2px; }
+      [data-dpr="2"] #join-us .content main button a {
+        font-size: 28px; }
+      [data-dpr="3"] #join-us .content main button a {
+        font-size: 42px; }
+      [data-dpr="2"] #join-us .content main button a {
+        letter-spacing: 4px; }
+      [data-dpr="3"] #join-us .content main button a {
+        letter-spacing: 6px; }
+  #join-us .content footer {
+    margin-top: 3.86667rem; }
+    #join-us .content footer p {
+      color: #666;
+      font-weight: 400;
+      font-size: 12px;
+      margin-bottom: 0.14667rem; }
+      [data-dpr="2"] #join-us .content footer p {
+        font-size: 24px; }
+      [data-dpr="3"] #join-us .content footer p {
+        font-size: 36px; }
+    #join-us .content footer .home a {
+      color: #333;
+      font-weight: normal;
+      font-size: 13px; }
+      [data-dpr="2"] #join-us .content footer .home a {
+        font-size: 26px; }
+      [data-dpr="3"] #join-us .content footer .home a {
+        font-size: 39px; }
+    #join-us .content footer .address, #join-us .content footer .contact {
+      color: #919191;
+      font-weight: 300;
+      font-size: 10px; }
+      [data-dpr="2"] #join-us .content footer .address, [data-dpr="2"] #join-us .content footer .contact {
+        font-size: 20px; }
+      [data-dpr="3"] #join-us .content footer .address, [data-dpr="3"] #join-us .content footer .contact {
+        font-size: 30px; }
+      #join-us .content footer .address a, #join-us .content footer .contact a {
+        color: #919191;
+        font-weight: 300;
+        font-size: 10px; }
+        [data-dpr="2"] #join-us .content footer .address a, [data-dpr="2"] #join-us .content footer .contact a {
+          font-size: 20px; }
+        [data-dpr="3"] #join-us .content footer .address a, [data-dpr="3"] #join-us .content footer .contact a {
+          font-size: 30px; }
+
+/*# sourceMappingURL=index.css.map */

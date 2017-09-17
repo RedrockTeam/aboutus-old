@@ -1,0 +1,432 @@
+/*
+* @Author: Excelsior
+* @Date:   2017-04-23 16:30:38
+* @Last Modified by:   Excelsior
+* @Last Modified time: 2017-04-25 21:26:17
+*/
+
+@font-face {
+    font-family: "iconfont";
+    src: url('../font/iconfont.woff?t=1493006517547') format('woff'), /* chrome, firefox */
+         url('../font/iconfont.ttf?t=1493006517547') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fenlei:before { content: "\e63f"; }
+
+@mixin font-dpr($font-size) {
+    font-size: $font-size;
+    [data-dpr="2"] & {
+        font-size: $font-size * 2;
+    }
+    [data-dpr="3"] & {
+        font-size: $font-size * 3;
+    }
+
+}
+
+@mixin line-height-dpr($line-height) {
+    line-height: $line-height;
+    [data-dpr="2"] & {
+        line-height: $line-height * 2;
+    }
+    [data-dpr="3"] & {
+        line-height: $line-height * 3;
+    }
+}
+
+@mixin letter-spacing-dpr($letter-spacing) {
+    letter-spacing: $letter-spacing;
+    [data-dpr="2"] & {
+        letter-spacing: $letter-spacing * 2;
+    }
+    [data-dpr="3"] & {
+        letter-spacing: $letter-spacing * 3;
+    }
+}
+
+@function torem($px){
+    @return $px / 75px * 1rem;
+}
+
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    &:active {
+        text-decoration: none;
+    }
+}
+
+.menu {
+    text-align: center;
+    padding: torem(45px) 0;
+    background-color: #3d3e40;
+}
+
+.menu .logo {
+    width: torem(156px);
+    height: torem(156px);
+}
+
+.menu ul {
+    margin-top: torem(80px);
+}
+
+.menu ul li {
+    margin: torem(20px) 0;
+    padding: torem(20px) 0;
+    a {
+        color: #999999;
+        width: torem(124px);
+        padding: torem(20px) 0;
+        @include font-dpr(14px);
+        @include letter-spacing-dpr(1px);
+        border-bottom: 1px solid #646566;
+    }
+    &:last-child {
+        a {
+            border: 0;
+        }
+    }
+}
+
+.panel {
+    text-align: center;
+    min-height: 100%;
+    background-color: #fff;
+}
+
+.menu-toggle {
+    z-index: 3;
+    position: fixed;
+    top: torem(26px);
+    right: torem(20px);
+    @include font-dpr(30px);
+}
+
+.swiper-container {
+    height: 100%;
+}
+
+.content-wrapper {
+    padding: torem(20px);
+    padding-top: torem(24px);
+}
+
+.page-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: torem(10px);
+    .color-lump {
+        float: left;
+        width: torem(48px);
+        height: torem(24px);
+        background-color: #EC3838;
+    }
+    .title-text {
+        @include font-dpr(17px);
+        position: relative;
+        left: torem(20px);
+        color: #EC3838;
+        font-weight: lighter;
+    }
+}
+
+/* 首页 */
+#index-page {
+    .banner {
+        width: 100%;
+        height: torem(478px);
+        background-size: cover;
+        background-image: url(../images/index-banner.png);
+    }
+    .content {
+        color: #666666;
+        text-align: left;
+        font-weight: lighter;
+        @include font-dpr(15px);
+        @include line-height-dpr(22px);
+        @include letter-spacing-dpr(2px);
+    }
+}
+
+/* 站长团 */
+#manager-team {
+    .content {
+        margin-top: torem(30px);
+        .item {
+            display: flex;
+            align-items: center;
+            padding: torem(20px) 0;
+            .avatar {
+                border-radius: 50%;
+                width: torem(180px);
+                height: torem(180px);
+            }
+            .intro {
+                text-align: left;
+                margin-left: torem(40px);
+                .job {
+                    color: #333;
+                    @include font-dpr(16px);
+                }
+                .name {
+                    color: #666;
+                    margin-left: torem(20px);
+                    @include font-dpr(16px);
+                }
+                .extra-intro {
+                    color: #919191;
+                    text-align: left;
+                    margin-top: torem(14px);
+                    @include font-dpr(13px);
+                }
+            }
+        }
+    }
+}
+
+/* 部门介绍 */
+#department-intro {
+    background-color: #f2f2f2;
+    .page-title {
+        margin-bottom: torem(40px);
+    }
+
+    .plan {
+        background-image: url(../images/plan-dep.png);
+    }
+
+    .web {
+        background-image: url(../images/web-dep.png);
+    }
+
+    .design {
+        background-image: url(../images/design-dep.png);
+    }
+
+    .mobile {
+        background-image: url(../images/mobile-dep.png);
+    }
+
+    .safe {
+        background-image: url(../images/safe-dep.png);
+    }
+
+    .department {
+        background-color: #fff;
+        .dep-bg {
+            height: torem(524px);
+            background-size: cover;
+        }
+        .dep-intro {
+            text-align: left;
+            padding: torem(17px);
+            .name {
+                color: #ec3838;
+                @include font-dpr(14px);
+                font-weight: 400;
+                margin-right: torem(16px);
+            }
+            p {
+                color: #919191;
+                margin-top: torem(17px);
+                text-indent: torem(50px);
+                @include font-dpr(13px);
+                @include line-height-dpr(24px);
+            }
+        }
+    }
+}
+
+/* 作品展示 */
+#production-show {
+    background-color: #f2f2f2;
+    .page-title {
+        margin-bottom: torem(40px);
+    }
+
+    .swiper-slide {
+        width: 72%;
+        margin: 0 -2%;
+        transform: scale(0.75);
+        background-color: #fff;
+    }
+
+    .jsns {
+        background-image: url(../images/jsns.png);
+    }
+
+    .zscy {
+        background-image: url(../images/zscy.png);
+    }
+
+    .shihuo {
+        background-image: url(../images/shihuo.png);
+    }
+
+    .btdown {
+        background-image: url(../images/btdown.png);
+    }
+
+    .cyxbs {
+        background-image: url(../images/cyxbs.png);
+    }
+    .wzdq {
+        background-image: url(../images/wzdq.png);
+    }
+
+    .production {
+        padding-bottom: torem(40px);
+        .production-img {
+            background-size: cover;
+            height: torem(524px);
+        }
+        .website {
+            text-align: left;
+            padding: torem(17px);
+            padding-top: torem(20px);
+            .name {
+                color: #333;
+                @include font-dpr(16px);
+                margin-right: torem(16px);
+            }
+            .title {
+                color: #666;
+                @include font-dpr(13px);
+            }
+            .intro {
+                color: #919191;
+                margin-top: torem(17px);
+                @include font-dpr(12px);
+                @include line-height-dpr(22px);
+            }
+        }
+    }
+}
+
+/* 成员现状 */
+#member-status {
+    .swiper-pagination {
+        position: initial;
+        margin-top: torem(35px);
+    }
+    .swiper-pagination-bullet-active {
+        background-color: #ff001c;
+    }
+    .swiper-pagination-bullet {
+        width: torem(20px);
+        height: torem(20px);
+    }
+    .swiper-slide {
+        section {
+            margin-top: torem(25px);
+        }
+        header {
+            display: flex;
+            align-items: center;
+            .color-lump {
+                float: left;
+                width: torem(14px);
+                height: torem(14px);
+                background-color: #999;
+            }
+            span {
+                color: #999;
+                font-weight: lighter;
+                @include font-dpr(14px);
+                margin-left: torem(10px);
+            }
+        }
+        .member {
+            display: flex;
+            justify-content: space-between;
+            margin: torem(10px);
+            margin-left: torem(24px);
+            .name, .company {
+                color: #333;
+                font-weight: 400;
+                @include font-dpr(14px);
+            }
+        }
+    }
+}
+
+#join-us {
+    background-color: #f2f2f2;
+    .content {
+        main{
+            img {
+                margin-top: torem(20px);
+            }
+            p {
+                color: #464646;
+                text-align: center;
+                margin-top: torem(20px);
+                @include font-dpr(20px);
+            }
+            button {
+                width: torem(310px);
+                height: torem(74px);
+                background-color: #ed4747;
+                border: 0;
+                border-radius: 5px;
+                margin-top: torem(100px);
+                a {
+                    color: #fff;
+                    font-weight: 300;
+                    @include font-dpr(14px);
+                    @include letter-spacing-dpr(2px);
+                }
+            }
+        }
+        footer {
+            margin-top: torem(290px);
+            p {
+                color: #666;
+                font-weight: 400;
+                @include font-dpr(12px);
+                margin-bottom: torem(11px);
+            }
+            .home {
+                a {
+                    color: #333;
+                    font-weight: normal;
+                    @include font-dpr(13px);
+                }
+            }
+            .address, .contact {
+                color: #919191;
+                font-weight: 300;
+                @include font-dpr(10px);
+                a {
+                    color: #919191;
+                    font-weight: 300;
+                    @include font-dpr(10px);
+                }
+            }
+        }
+    }
+}
