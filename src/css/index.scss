@@ -471,14 +471,23 @@ body {
       .title {
         background-image: url(../img/zzt.png);
       }
+      &-active {
+        background-image: url(../img/zztPic1.png);   
+      }
     }
     .pm {
-
+      background-image: url(../img/ChanpinPic.png);
+      &-active {
+        background-image: url(../img/ChanpinPic1.png);   
+      }
     }
     .design {
       background-image: url(../img/DesignPic.png);
       .title {
         background-image: url(../img/Design.png);
+      }
+      &-active {
+        background-image: url(../img/DesignPic1.png);   
       }
     }
     .web {
@@ -486,17 +495,26 @@ body {
       .title {
         background-image: url(../img/Web.png);
       }
+      &-active {
+        background-image: url(../img/WebPic1.png);   
+      }
     }
     .mobile {
       background-image: url(../img/MobilePic.png);
       .title {
         background-image: url(../img/Mobile.png);
       }
+      &-active {
+        background-image: url(../img/MobilePic1.png);   
+      }
     }
     .sre {
-      background-image: url(../img/srePic.png);
+      background-image: url(../img/SrePic.png);
       .title {
         background-image: url(../img/sre.png);
+      }
+      &-active {
+        background-image: url(../img/SrePic1.png);   
       }
     }
   }

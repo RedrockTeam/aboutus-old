@@ -162,3 +162,21 @@ $(document).ready(() => {
   // 二维码显示
   qrcode();
 });
+
+// 点击图片更换
+$('.content').on('click', e => {
+  let department = e.currentTarget.parentNode;
+  let departmentClasses = department.classList[1];
+  let changedClass = /active/.test(departmentClasses) ?
+      departmentClasses.replace('-active', '') :
+      departmentClasses + '-active';
+
+  $(department).removeClass(departmentClasses)
+  $(department).addClass(changedClass)
+  console.log(department)
+})
+
+
+
+
+
