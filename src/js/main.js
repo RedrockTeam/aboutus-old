@@ -173,7 +173,6 @@ $('.content').on('click', e => {
 
   $(department).removeClass(departmentClasses)
   $(department).addClass(changedClass)
-  console.log(department)
 })
 
 
